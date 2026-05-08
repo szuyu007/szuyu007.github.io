@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Seeyou — Psychologist by training. Designer by practice. Lawyer in progress. Builder by choice. Based in Taiwan." />
+  <title>Seeyou · Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- ─── Navbar ─── -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="navbar-brand mono">seeyou<span class="text-accent">.</span></a>
+      <nav class="navbar-nav" aria-label="Primary">
+        <a href="#about" class="nav-link" data-section="about">about</a>
+        <a href="#projects" class="nav-link" data-section="projects">projects</a>
+        <a href="#contact" class="nav-link" data-section="contact">contact</a>
+      </nav>
+      <button class="navbar-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── Hero ─── -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <p class="hero-eyebrow mono">
+          <span class="hero-eyebrow-dot"></span>
+          transmitting from taiwan
+        </p>
+        <h1 class="hero-title">
+          Hi, I'm <span class="hero-name">Seeyou</span>.
+        </h1>
+        <p class="hero-statements" aria-label="What I do">
+          <span class="hero-statement">Psychologist <span class="hero-statement-faint">by training.</span></span>
+          <span class="hero-statement">Designer <span class="hero-statement-faint">by practice.</span></span>
+          <span class="hero-statement">Builder <span class="hero-statement-faint">by choice.</span></span>
+        </p>
+        <ul class="hero-tags" aria-label="Working at the intersection of">
+          <li><a href="#about" class="hero-tag mono">design</a></li>
+          <li><a href="#about" class="hero-tag mono">psychology</a></li>
+          <li><a href="#about" class="hero-tag mono">law</a></li>
+        </ul>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">see my work</a>
+          <a href="#about" class="btn btn-ghost">about me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── About ─── -->
+    <section class="section about" id="about">
+      <div class="container">
+        <p class="section-label">01 / about</p>
+        <h2 class="section-title">A non-linear path,<br />on purpose.</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I started out studying <strong>psychology</strong> at NCKU — fascinated by how people think, decide, and break.
+              Then I drifted into <strong>industrial design and UX</strong>, because understanding minds wasn't enough; I wanted to shape what they touched.
+            </p>
+            <p>
+              Now I'm studying <strong>law</strong>, and building <strong>legal tech</strong> — software for the messy, human, high-stakes parts of the legal system.
+              The thread through all of it: <span class="text-accent">tools that take people seriously.</span>
+            </p>
+            <p class="text-muted">
+              Based in Taiwan. Always somewhere between disciplines.
+            </p>
+          </div>
+
+          <aside class="about-meta">
+            <dl class="meta-list mono">
+              <div><dt>location</dt><dd>Taiwan</dd></div>
+              <div><dt>training</dt><dd>Psychology · NCKU</dd></div>
+              <div><dt>practice</dt><dd>Industrial Design · UX</dd></div>
+              <div><dt>studying</dt><dd>Law</dd></div>
+              <div><dt>building</dt><dd>Legal Tech</dd></div>
+              <div><dt>status</dt><dd class="text-accent">available</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Projects ─── -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <p class="section-label">02 / projects</p>
+        <h2 class="section-title">Things I've built<br />(and am building).</h2>
+
+        <ul class="project-list" id="project-list">
+          <!-- Populated by assets/js/projects.js -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- ─── Contact ─── -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <p class="section-label">03 / contact</p>
+        <h2 class="section-title">Let's talk.</h2>
+
+        <p class="contact-lead">
+          Open to collaboration on legal tech, design-driven engineering,
+          and anything that lives between disciplines.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label mono">email</span>
+            <a href="mailto:selina201516@gmail.com" class="link contact-value">selina201516@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label mono">github</span>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="link contact-value">github.com/seeyou</a>
+          </li>
+          <li>
+            <span class="contact-label mono">location</span>
+            <span class="contact-value">Taiwan · UTC+8</span>
+          </li>
+        </ul>
+
+        <footer class="footer">
+          <p class="mono text-muted">
+            <span class="text-accent">//</span> built from scratch · html, css, js · 2026
+          </p>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Easter egg: bottom-right transmitting dot -->
+  <div class="status-dot" aria-hidden="true">transmitting</div>
+
+  <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>

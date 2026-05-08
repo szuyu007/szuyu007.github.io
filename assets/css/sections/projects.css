@@ -1,0 +1,113 @@
+.project-list {
+  display: flex;
+  flex-direction: column;
+  border-top: var(--border);
+}
+
+.project-item {
+  border-bottom: var(--border);
+  position: relative;
+  transition: background-color var(--dur-base) var(--ease);
+}
+
+.project-item:hover {
+  background-color: var(--color-bg-elevated);
+}
+
+.project-link {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: var(--space-6);
+  align-items: center;
+  padding: var(--space-6) var(--space-2);
+  position: relative;
+}
+
+.project-id {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  min-width: 48px;
+}
+
+.project-item:hover .project-id { color: var(--color-accent); }
+
+.project-info { min-width: 0; }
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.project-status {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  text-transform: lowercase;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-weight: var(--fw-regular);
+}
+
+.project-status[data-status="deployed"] {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.project-status[data-status="in-progress"] {
+  color: var(--color-accent-soft);
+  border-color: var(--color-accent-soft);
+}
+
+.project-description {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  line-height: var(--lh-snug);
+  max-width: 60ch;
+}
+
+.project-tags {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.project-tag {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}
+
+.project-tag::before { content: "#"; color: var(--color-text-faint); }
+
+.project-arrow {
+  font-family: var(--font-mono);
+  color: var(--color-text-faint);
+  font-size: var(--fs-md);
+  transition: transform var(--dur-base) var(--ease-out),
+              color var(--dur-base) var(--ease);
+}
+
+.project-item:hover .project-arrow {
+  color: var(--color-accent);
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .project-link {
+    grid-template-columns: auto 1fr auto;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-2);
+  }
+  .project-tags { display: none; }
+  .project-title { font-size: var(--fs-md); }
+}

@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "id": "SP01",
+      "title": "Judge Sentencing Analysis",
+      "description": "Data-driven exploration of judicial sentencing patterns across courts and case types. Surfaces tendencies, outliers, and disparities to support legal research.",
+      "tags": ["legal-tech", "data", "research"],
+      "status": "in-progress",
+      "url": "#"
+    },
+    {
+      "id": "SP02",
+      "title": "Credit Card Optimizer",
+      "description": "Recommends the best credit card to use for any given purchase based on category, merchant, and reward structure. Live and in daily use.",
+      "tags": ["consumer", "optimization", "deployed"],
+      "status": "deployed",
+      "url": "#"
+    },
+    {
+      "id": "SP06",
+      "title": "Case Tracker",
+      "description": "A focused workspace for tracking ongoing legal cases — deadlines, parties, filings, and the small details that get lost between them.",
+      "tags": ["legal-tech", "productivity"],
+      "status": "in-progress",
+      "url": "#"
+    },
+    {
+      "id": "SP09",
+      "title": "Courtroom Simulation",
+      "description": "Interactive courtroom scenario practice for law students. Roleplay procedures, examine witnesses, and pressure-test arguments before they matter.",
+      "tags": ["legal-tech", "education", "ai"],
+      "status": "in-progress",
+      "url": "#"
+    },
+    {
+      "id": "SP11",
+      "title": "This Portfolio",
+      "description": "The site you're reading. Hand-built in HTML, CSS, and vanilla JS. No frameworks, no build step — just files served from GitHub Pages.",
+      "tags": ["design", "personal", "from-scratch"],
+      "status": "in-progress",
+      "url": "#"
+    }
+  ]
+}
